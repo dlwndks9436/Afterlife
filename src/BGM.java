@@ -31,25 +31,25 @@ public class BGM implements Runnable {
     }
 
     public void run() {
-        if (file != null) {
-            try {
-                audioStream = AudioSystem.getAudioInputStream(file);
-            } catch (IOException e) {
-                e.printStackTrace();
-            } catch (UnsupportedAudioFileException e) {
-                e.printStackTrace();
-            }
-            try {
-                clip = AudioSystem.getClip();
-                clip.open(audioStream);
-            } catch (LineUnavailableException e) {
-                e.printStackTrace();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-            clip.loop(clip.LOOP_CONTINUOUSLY);
-            clip.start();
-        }
+//        if (file != null) {
+//            try {
+//                audioStream = AudioSystem.getAudioInputStream(file);
+//            } catch (IOException e) {
+//                e.printStackTrace();
+//            } catch (UnsupportedAudioFileException e) {
+//                e.printStackTrace();
+//            }
+//            try {
+//                clip = AudioSystem.getClip();
+//                clip.open(audioStream);
+//            } catch (LineUnavailableException e) {
+//                e.printStackTrace();
+//            } catch (IOException e) {
+//                e.printStackTrace();
+//            }
+//            clip.loop(clip.LOOP_CONTINUOUSLY);
+//            clip.start();
+//        }
     }
 }
 
