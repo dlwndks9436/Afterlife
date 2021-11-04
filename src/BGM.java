@@ -26,8 +26,8 @@ public class BGM implements Runnable {
     }
 
     public void exit() {
-        clip.stop();
-        clip.flush();
+//        clip.stop();
+//        clip.flush();
     }
 
     public void run() {
